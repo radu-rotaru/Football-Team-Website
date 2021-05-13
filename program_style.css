@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 163, 154, 0.3);
+}
+.main-header {
+   position: relative;
+   background-color: #c80f2e;
+}
+
+.navigation ul {
+  margin: 0;
+  text-align: center;
+  font-size: 1.3em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.navigation li {
+  display: inline;
+  padding: 0 5%;
+}
+.navigation a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+.navigation a:hover {
+   background-color: rgba(255, 255, 255, .9);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 30%;
+  background-color: #c80f2e;
+}
+.item1 {
+  margin: 0px;
+  background-color: #c80f2e;
+  font-size: 5vw;
+  color: white;
+  padding: 30px;
+}
+.item2 {
+  background-image: url("Images/nike-liverpool.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+#content {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-row-gap: 50px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.side {
+  height: 700px;
+  background-color:  #c80f2e;
+}
+#program {
+  position: relative;
+  display: block;
+  font-family: Arial;
+  background-color: white;
+  border: 2px solid  #c80f2e;
+}
+.dropdown {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #c80f2e;
+  width: 40vw;
+  border: 2px solid #c80f2e;
+  font-size: 20px;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+}
+.dropdown-content {
+  position: absolute;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  background-color: #527a7a;
+  width: 100%;
+  display: none;
+  border-style: solid;
+  border-color: white;
+  border-radius: 0px 0px 30px 30px;
+}
+.but {
+  color: #527a7a;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #527a7a;
+  border-radius: 15px;
+  z-index: 1;
+}
+.but:hover {
+  background-color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: grid;
+  z-index: 1;
+}
+#comp_title {
+  text-align: center;
+  color: #c80f2e;
+  font-size: 30px;
+}
+.results {
+  position: relative;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+#groupstage {
+  display: grid;
+}
+#ro16 {
+  display: none;
+}
+.match {
+  display: grid;
+  margin-top: 20px;
+  padding: 5px;
+  grid-template-columns: 10% 30% 20% 30% 10%;
+  width: 40vw;
+  height: 60px;
+  border: 2px solid  #c80f2e;
+}
+
+#liv {
+  background-image: url("Images/Liverpool_FC..png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#ajax {
+  background-image: url("Images/Ajax.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#atalanta {
+  background-image: url("Images/Atalanta.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#mid {
+  background-image: url("Images/Midtjylland.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#leipzig {
+  background-image: url("Images/Leipzig.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center
+}
+#manutd {
+  background-image: url("Images/ManUtd Logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center
+}
+#astonvilla {
+  background-image: url("Images/AstonVilla Logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center
+}
+.team_name {
+  font-size: 20px;
+  color: #c80f2e;
+  margin: auto;
+
+}
+.score {
+  background-color: #c80f2e;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+@media screen and (max-width : 835px) {
+ .team_name {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width : 662px) {
+ .team_name {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width : 622px) {
+ .team_name {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width : 662px) {
+ .score {
+    font-size: 14px;
+    padding: 3px;
+  }
+}
+.butoane {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  background-color: white;
+  width: 40vw;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -20vw;
+
+}
+.btn {
+  font-size: 14px;
+  border: 2px solid #c80f2e;
+  padding: 10px;
+  background-color: white;
+  color: #c80f2e;
+}
+@media screen and (max-width : 662px) {
+ .btn {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+#footer {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  height: 300px;
+  background-color:  #c80f2e;
+}
+#ft-text {
+  position: absolute;
+  font-size: 3vw;
+  color: white;
+  margin-left: 50%;
+  bottom: 0px;
+}
+.fa-facebook, .fa-instagram, .fa-tiktok, .fa-twitter {
+  margin-top: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+}

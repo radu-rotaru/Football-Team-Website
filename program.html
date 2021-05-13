@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="program_style.css">
+      <script src="https://kit.fontawesome.com/27e28c01fa.js" crossorigin="anonymous"></script>
+      <script src ="program_script.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navigation">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="squad.html">Squad</a></li>
+              <li><a href="program.html">Program</a></li>
+          </ul>
+          <div class="grid-container">
+            <h1 class="grid-item item1">Liverpool Football Club </h1>
+            <div class="grid-item item2"> </div>
+          </div>
+      </nav>
+    </header>
+    <div id="content">
+      <section class="side">
+      </section>
+      <section id="program">
+        <div class="butoane UCL">
+          <button class="btn" id="gs" onclick="gs()">Group Stage</button>
+          <button class="btn" id="opt" onclick="ro16()">Round of 16</button>
+        </div>
+        <div class="dropdown"> Choose competition
+           <div class="dropdown-content">
+              <button class="but"> Premier League </button>
+              <button class="but" onclick="onUCL()"> Uefa Champions League </button>
+              <button class="but" onclick="onFA()"> FA Cup </button>
+              <button class="but"> Carabao Cup </button>
+           </div>
+        </div>
+        <div class ="UCL">
+        <h3 id="comp_title"> UCL </h3>
+        <div class="results" id="groupstage">
+           <div class="match">
+              <div id="ajax"></div>
+              <div class="team_name">Ajax</div>
+              <div class="score"> 0 - 1 </div>
+              <div class="team_name">Liverpool</div>
+              <div id="liv"></div>
+           </div>
+           <div class="match">
+              <div id="liv"></div>
+              <div class="team_name">Liverpool</div>
+              <div class="score"> 2 - 0 </div>
+              <div class="team_name">Midtjylland</div>
+              <div id="mid"></div>
+           </div>
+           <div class="match">
+              <div id="atalanta"></div>
+              <div class="team_name">Atalanta</div>
+              <div class="score"> 0 - 5 </div>
+              <div class="team_name">Liverpool</div>
+              <div id="liv"></div>
+           </div>
+           <div class="match">
+              <div id="liv"></div>
+              <div class="team_name">Liverpool</div>
+              <div class="score"> 0 - 2 </div>
+              <div class="team_name">Atalanta</div>
+              <div id="atalanta"></div>
+           </div>
+           <div class="match">
+              <div id="liv"></div>
+              <div class="team_name">Liverpool</div>
+              <div class="score"> 1 - 0 </div>
+              <div class="team_name">Ajax</div>
+              <div id="ajax"></div>
+           </div>
+           <div class="match">
+              <div id="mid"></div>
+              <div class="team_name">Midtjylland</div>
+              <div class="score"> 1 - 1 </div>
+              <div class="team_name">Liverpool</div>
+              <div id="liv"></div>
+           </div>
+        </div>
+        <div class="results" id="ro16">
+           <div class="match">
+              <div id="leipzig"></div>
+              <div class="team_name">Leipzig</div>
+              <div class="score"> 0 - 2 </div>
+              <div class="team_name">Liverpool</div>
+              <div id="liv"></div>
+           </div>
+           <div class="match">
+              <div id="liv"></div>
+              <div class="team_name">Liverpool</div>
+              <div class="score"> 2 - 0 </div>
+              <div class="team_name">Leipzig</div>
+              <div id="leipzig"></div>
+           </div>
+         </div>
+         </div>
+         <div class = "FA Cup">
+           <h3 id="comp_title"> FA </h3>
+           <div class="results">
+              <div class="match">
+                 <div id="astonvilla"></div>
+                 <div class="team_name">AstonVilla</div>
+                 <div class="score"> 1 - 4 </div>
+                 <div class="team_name">Liverpool</div>
+                 <div id="liv"></div>
+              </div>
+              <div class="match">
+                 <div id="manutd"></div>
+                 <div class="team_name">Man. United</div>
+                 <div class="score"> 2 - 0 </div>
+                 <div class="team_name">Liverpool</div>
+                 <div id="liv"></div>
+              </div>
+            </div>
+         </div>
+      </section>
+      <section class="side">
+      </section>
+      <footer id="footer">
+        <p id="ft-text">Liverpool FC - You'll never walk alone</p>
+        <a href="https://www.facebook.com/LiverpoolFC/" class="fab fa-facebook"></a>
+        <a href="https://www.instagram.com/liverpoolfc/?hl=en" class="fab fa-instagram"></a>
+        <a href="https://www.tiktok.com/@liverpoolfc?lang=en" class="fab fa-tiktok"></a>
+        <a href="https://twitter.com/LFC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fab fa-twitter"></a>
+      </footer>
+    </div>
+  </body>
+</html>

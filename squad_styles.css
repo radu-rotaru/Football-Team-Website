@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 163, 154, 0.3);
+}
+.main-header {
+   position: relative;
+   background-color: #c80f2e;
+}
+
+.navigation ul {
+  margin: 0;
+  text-align: center;
+  font-size: 1.3em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.navigation li {
+  display: inline;
+  padding: 0 5%;
+}
+.navigation a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+.navigation a:hover {
+   background-color: rgba(255, 255, 255, .9);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 30%;
+  background-color: #c80f2e;
+}
+
+.item1 {
+  margin: 0px;
+  background-color: #c80f2e;
+  font-size: 5vw;
+  color: white;
+  padding: 30px;
+}
+.item2 {
+  background-image: url("Images/nike-liverpool.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+#content {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-row-gap: 50px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.dropdown {
+  display: grid;
+  height: 600px;
+  background-color:  #c80f2e;
+}
+.but {
+   margin: auto;
+   width: 80%;
+   height: 40%;
+   padding: auto;
+   font-size: 1.5vw;
+   background-color: #c80f2e;
+   color: white;
+   border-style: solid;
+   border-color: white;
+   border-radius: 5px;
+}
+.but:hover {
+  background-color: white;
+  color: #c80f2e;
+}
+.squad {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  font-family: Arial;
+  border: 2px solid #c80f2e;
+  background-color: white;
+  background-image: url("Images/liverbird.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#gk {
+  display: flex;
+}
+#def {
+  display: none;
+}
+#mid {
+  display: none;
+}
+#st {
+  display: none;
+}
+#staff {
+  display: none;
+}
+.player {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 125px;
+  background-color: #c80f2e;
+  color: white;
+  border: 1px solid red;
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: 150px 120px;
+}
+#becker {
+    background-image: url("Images/alisson.jpg");
+}
+#adrian {
+    background-image: url("Images/adrian.jpg");
+}
+#keleher {
+    background-image: url("Images/keleher.jpg");
+}
+#pitaluga {
+    background-image: url("Images/pitaluga.jpg");
+}
+#virgil {
+    background-image: url("Images/vandijk.jpg");
+}
+#gomez {
+    background-image: url("Images/joegomez.jpg");
+}
+#kabak {
+    background-image: url("Images/kabak.jpg");
+}
+#tsimikas {
+    background-image: url("Images/tsimikas.jpg");
+}
+#robertson {
+    background-image: url("Images/robertson.jpg");
+}
+#davies {
+    background-image: url("Images/davies.jpg");
+}
+#matip {
+    background-image: url("Images/matip.jpg");
+}
+#rwilliams {
+    background-image: url("Images/rhyswilliams.jpg");
+}
+#phillips {
+    background-image: url("Images/narphilips.jpg");
+}
+#trent {
+    background-image: url("Images/trent.jpg");
+}
+#nwilliams {
+    background-image: url("Images/necowilliams.jpg");
+}
+#fabinho {
+    background-image: url("Images/fabinho.jpg");
+}
+#wijnaldum {
+    background-image: url("Images/wijnaldum.jpg");
+}
+#thiago {
+    background-image: url("Images/thiago.jpg");
+}
+#milner {
+    background-image: url("Images/milner.jpg");
+}
+#keita {
+    background-image: url("Images/nabykeita.jpg");
+}
+#henderson {
+    background-image: url("Images/henderson.jpg");
+}
+#ox {
+    background-image: url("Images/ox.jpg");
+}
+#jones {
+    background-image: url("Images/jones.jpg");
+}
+#shaqiri {
+    background-image: url("Images/shaq.jpg");
+}
+#woodburn {
+    background-image: url("Images/woodburn.jpg");
+}
+#firmino {
+    background-image: url("Images/firmino.jpg");
+}
+#mane {
+    background-image: url("Images/mane.jpg");
+}
+#salah {
+    background-image: url("Images/salah.jpg");
+}
+#jota {
+    background-image: url("Images/jota.jpeg");
+}
+#origi {
+    background-image: url("Images/origi.jpg");
+}
+#klopp {
+    background-image: url("Images/klopp.jpg");
+}
+#krawietz {
+    background-image: url("Images/krawietz.jpeg");
+}
+#lijnders {
+    background-image: url("Images/lijnders.jpeg");
+}
+#achterberg {
+    background-image: url("Images/achtenberg.jpeg");
+}
+#robinson {
+    background-image: url("Images/jackrob.jpeg");
+}
+#hall_of_fame {
+    display: grid;
+    height: 600px;
+    background-color:  #c80f2e;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+.hof {
+  font-size: 16px;
+}
+#footer {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  height: 300px;
+  border: 2px solid black;
+  background-color:  #c80f2e;
+}
+#ft-text {
+  position: absolute;
+  font-size: 3vw;
+  color: white;
+  margin-left: 50%;
+  bottom: 0px;
+}
+.fa-facebook, .fa-instagram, .fa-tiktok, .fa-twitter {
+  margin-top: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+}

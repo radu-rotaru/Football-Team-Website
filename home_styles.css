@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 163, 154, 0.3);
+}
+.main-header {
+   position: relative;
+   background-color: #c80f2e;
+}
+
+.navigation ul {
+  margin: 0;
+  text-align: center;
+  font-size: 1.3em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.navigation li {
+  display: inline;
+  padding: 0 5%;
+}
+.navigation a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+.navigation a:hover {
+   background-color: rgba(255, 255, 255, .9);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 30%;
+  background-color: #c80f2e;
+}
+.item1 {
+  margin: 0px;
+  background-color: #c80f2e;
+  font-size: 5vw;
+  color: white;
+  padding: 30px;
+}
+.item2 {
+  background-image: url("Images/nike-liverpool.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+#content {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-row-gap: 50px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+#domestic {
+  display: grid;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  grid-template-columns: auto;
+  height: 700px;
+  background-color:  #c80f2e;
+}
+.trophy {
+  font-size: 15px;
+  text-align: center;
+  background-color: #c80f2e;
+  color: white;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: 300px 150px;
+  background-position: top;
+  transition: background-size 2s;
+}
+.trophy:hover {
+  background-size: 340px 170px;
+}
+#PL {
+  background-image: url("Images/PL.png");
+}
+#FA {
+  background-image: url("Images/FA.png");
+}
+#LC {
+  background-image: url("Images/League Cup.png");
+}
+#CS {
+  background-image: url("Images/ComShield.png");
+}
+
+#description {
+  display: grid;
+  justify-content: space-evenly;
+  align-content: space-between;
+  font-family: Arial;
+  background-color: white;
+  background-color: white;
+  border: 2px solid  #c80f2e;
+}
+.slider {
+    border: 2px solid red;
+    width: 40vw;
+    height: 15vw;
+}
+#img_1 {
+    display: block;
+    margin-top: 20px;
+    background-image: url("Images/BusParade.jpg");
+    background-repeat: no-repeat;
+    background-size: 40vw 20vw;
+    background-position: top;
+}
+#img_2 {
+  display: none;
+  margin-top: 20px;
+  background-image: url("Images/PremierLeague.jpg");
+  background-repeat: no-repeat;
+  background-size: 40vw 20vw;
+  background-position: center;
+}
+#img_3 {
+  display: none;
+  margin-top: 20px;
+  background-image: url("Images/CWC.jpg");
+  background-repeat: no-repeat;
+  background-size: 40vw 20vw;
+  background-position: center;
+}
+.d_text {
+  width: 40vw;
+  display: none;
+}
+@media screen and (max-width : 1536px) {
+ .d_text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width : 856px) {
+  .d_text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width : 618px) {
+  .d_text {
+    font-size: 14px;
+  }
+}
+
+.butoane {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  background-color: white;
+}
+.arrow {
+  border: solid #c80f2e;
+  border-width: 0 10px 10px 0;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+#left {
+  transform: rotate(135deg);
+}
+#right {
+  transform: rotate(-45deg);
+}
+#european {
+  display: grid;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  grid-template-columns: auto;
+  height: 700px;
+  background-color:  #c80f2e;
+}
+#UCL {
+  background-image: url("Images/UCL.png");
+}
+#USC {
+  background-image: url("Images/UefaSuperCup.png");
+}
+#UC {
+  background-image: url("Images/UefaCup.png");
+}
+#CWC {
+  background-image: url("Images/ClubWC.png");
+}
+#footer {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  height: 300px;
+  background-color:  #c80f2e;
+}
+#ft-text {
+  position: absolute;
+  font-size: 3vw;
+  color: white;
+  margin-left: 50%;
+  bottom: 0px;
+}
+.fa-facebook, .fa-instagram, .fa-tiktok, .fa-twitter {
+  margin-top: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+}
