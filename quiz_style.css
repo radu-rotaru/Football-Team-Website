@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 163, 154, 0.3);
+}
+
+@media screen and (max-width : 600px) {
+ body {
+    width: 600px;
+  }
+}
+
+.main-header {
+   position: relative;
+   background-color: #c80f2e;
+}
+
+.navigation ul {
+  margin: 0;
+  text-align: center;
+  font-size: 1.3em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.navigation li {
+  display: inline;
+  padding: 0 5%;
+}
+
+.navigation a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+   background-color: rgba(255, 255, 255, .9);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 30%;
+  background-color: #c80f2e;
+}
+
+.item1 {
+  margin: 0px;
+  background-color: #c80f2e;
+  font-size: 50px;
+  color: white;
+  padding-left: 30px;
+}
+
+#social {
+  padding-left: 30px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+@media screen and (max-width : 890px) {
+ .item1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width : 700px) {
+ .item1 {
+    font-size: 30px;
+  }
+}
+
+.item2 {
+  background-image: url("Images/nike-liverpool.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-row-gap: 50px;
+  justify-content: space-between;margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.side {
+  height: 700px;
+  background-color:  #c80f2e;
+}
+
+#quiz_questions {
+  display: grid;
+  align-content: space-evenly;
+  font-family: Arial;
+  background-color: white;
+  border: 2px solid  #c80f2e;
+}
+
+#menu {
+  display: grid;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  width: 80%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #00a398;
+  background-color: #c80f2e;
+  border-radius: 5px;
+}
+
+#menu_title {
+  background-color: #00a398;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  font-style: Arial;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#div_btn {
+  display: grid;
+  align-items: center;
+  height: 100px;
+  background-color: #00a398;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.quiz_btn {
+  font-size: 12px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: Arial;
+  color: white;
+  background-color:  #00a398;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#play {
+  display: grid;
+  align-content: space-evenly;
+  width: 100%;
+  height: 600px;
+}
+
+#qs_div {
+  display: grid;
+  align-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  color: #c80f2e;
+  border: 2px solid #c80f2e;
+  height: 100px;
+  width: 80%;
+  font-size: 14px;
+  font-family: Arial;
+  font-style: italic;
+  text-align: center;
+}
+
+#ans_div {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  width: 80%;
+  height: 300px;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  border: 2px solid #c80f2e;
+}
+
+input:checked + label {
+  font-weight: bold;
+}
+
+#ok, #sub, #back_menu {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  height: 30px;
+  background-color: white;
+  color: #c80f2e;
+  border: 2px solid #c80f2e;
+}
+
+.true_ans {
+  color: green;
+}
+
+.false_ans {
+  color: red;
+}
+
+#final {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  border: 2px solid #c80f2e;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ld_div {
+  display: grid;
+  width: 90%;
+  height: 600px;
+  align-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  color: #c80f2e;
+}
+
+#ld_title {
+  text-align: center;
+}
+
+#ld_table, #ld_table > tr:nth-child(even){
+  border: 2px solid #c80f2e;
+  border-collapse: collapse;
+}
+
+#ld_table > tr:nth-child(odd) {
+  background-color: #c80f2e;
+  border: 2px solid #c80f2e;
+  color:white;
+}
+
+#footer {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  height: 300px;
+  background-color:  #c80f2e;
+}
+
+#ft-text {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  right: 0%;
+  bottom: 0px;
+}
+
+@media screen and (max-width : 950px) {
+ #ft-text {
+    font-size: 25px;
+  }
+}
+
+.fa-facebook, .fa-instagram, .fa-tiktok, .fa-twitter {
+  margin-top: 30px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+}
+
+@media screen and (max-width : 950px) {
+ .fa-facebook, .fa-instagram, .fa-tiktok, .fa-twitter {
+    font-size: 45px;
+  }
+}

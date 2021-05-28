@@ -1,0 +1,24 @@
+{
+  "questions" : [
+    {
+      "qs" : "How many Champions Leagues/Champion's Cups have Liverpool won?",
+      "ans" : [ ["6", "true"], ["10", "false"], ["3", "false"] ]
+    },
+    {
+      "qs" : "In which city did Liverpool beat AC Milan in the 2005 final of UCL, after being lead 3-0 at half time?",
+      "ans" :[ ["Moscow", "false"], ["Madrid", "false"], ["Istanbul", "true"] ]
+    },
+    {
+      "qs" : "How many years have Liverpool waited before winning the title again last season?",
+      "ans" :[ ["3", "false"], ["12", "false"], ["30", "true"] ]
+    },
+    {
+      "qs" : "Who is the current captain of Liverpool FC?",
+      "ans" :[ ["Joel Matip", "false"], ["Jordan Henderson", "true"], ["Virgil van Dijk", "false"] ]
+    },
+    {
+      "qs" : "Who scored our winning goal in the 36-th round against West Brom?",
+      "ans" :[ ["Mohamed Salah", "false"], ["Alisson Becker", "true"], ["Curtis Jones", "false"] ]
+    }
+  ]
+}

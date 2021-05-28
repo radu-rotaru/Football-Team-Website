@@ -1,11 +1,19 @@
 * {
   box-sizing: border-box;
 }
+
 body, html {
   padding: 0;
   margin: 0;
   background-color: rgba(0, 163, 154, 0.3);
 }
+
+@media screen and (max-width : 600px) {
+ body {
+    width: 600px;
+  }
+}
+
 .main-header {
    position: relative;
    background-color: #c80f2e;
@@ -17,37 +25,62 @@ body, html {
   font-size: 1.3em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
+
 .navigation li {
   display: inline;
   padding: 0 5%;
 }
+
 .navigation a {
   display: inline-block;
   padding: 0.5em;
   color: white;
   text-decoration: none;
 }
+
 .navigation a:hover {
    background-color: rgba(255, 255, 255, .9);
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: auto 30%;
   background-color: #c80f2e;
 }
+
 .item1 {
   margin: 0px;
   background-color: #c80f2e;
-  font-size: 5vw;
+  font-size: 50px;
   color: white;
-  padding: 30px;
+  padding-left: 30px;
 }
+
+#social {
+  padding-left: 30px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+@media screen and (max-width : 890px) {
+ .item1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width : 700px) {
+ .item1 {
+    font-size: 30px;
+  }
+}
+
 .item2 {
   background-image: url("Images/nike-liverpool.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
 }
+
 #content {
   display: grid;
   grid-template-columns: 25% 50% 25%;
@@ -55,30 +88,33 @@ body, html {
   justify-content: space-between;
   margin-top: 100px;
 }
+
 .side {
   height: 700px;
   background-color:  #c80f2e;
 }
+
 #program {
   position: relative;
-  display: block;
   font-family: Arial;
   background-color: white;
   border: 2px solid  #c80f2e;
 }
+
 .dropdown {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   background-color: #c80f2e;
-  width: 40vw;
-  border: 2px solid #c80f2e;
+  width: 80%;
+  border: 2px solid #527a7a;
   font-size: 20px;
   font-family: Arial;
   color: white;
   text-align: center;
 }
+
 .dropdown-content {
   position: absolute;
   grid-template-columns: auto;
@@ -91,96 +127,115 @@ body, html {
   border-color: white;
   border-radius: 0px 0px 30px 30px;
 }
+
 .but {
   color: #527a7a;
   text-decoration: none;
   border-style: solid;
   border-color: #527a7a;
   border-radius: 15px;
-  z-index: 1;
 }
+
 .but:hover {
   background-color: black;
 }
+
 .dropdown:hover .dropdown-content {
   display: grid;
-  z-index: 1;
 }
+
 #comp_title {
   text-align: center;
   color: #c80f2e;
   font-size: 30px;
 }
+
 .results {
   position: relative;
-  width: 40vw;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
+
 #groupstage {
   display: grid;
 }
+
 #ro16 {
   display: none;
 }
+
+#quarter-finals {
+  display: none;
+}
+
+#prem_1 {
+  display: grid;
+}
+
+#prem_2 {
+  display: none;
+}
+
+#prem_3 {
+  display: none;
+}
+
+#prem_4 {
+  display: none;
+}
+
+#prem_5 {
+  display: none;
+}
+
+#prem_6 {
+  display: none;
+}
+
+#prem_7 {
+  display: none;
+}
+
+
 .match {
   display: grid;
   margin-top: 20px;
   padding: 5px;
   grid-template-columns: 10% 30% 20% 30% 10%;
-  width: 40vw;
+  width: 100%;
   height: 60px;
   border: 2px solid  #c80f2e;
 }
 
-#liv {
-  background-image: url("Images/Liverpool_FC..png");
+#FA {
+  display: none;
+}
+
+#UCL {
+  display: none;
+}
+
+#PL {
+  display: grid;
+}
+
+#CC {
+  display: none;
+}
+
+.team_img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
-#ajax {
-  background-image: url("Images/Ajax.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-#atalanta {
-  background-image: url("Images/Atalanta.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-#mid {
-  background-image: url("Images/Midtjylland.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-#leipzig {
-  background-image: url("Images/Leipzig.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center
-}
-#manutd {
-  background-image: url("Images/ManUtd Logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center
-}
-#astonvilla {
-  background-image: url("Images/AstonVilla Logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center
-}
+
 .team_name {
   font-size: 20px;
   color: #c80f2e;
   margin: auto;
-
 }
+
 .score {
   background-color: #c80f2e;
   font-size: 16px;
@@ -189,39 +244,44 @@ body, html {
   margin: auto;
   padding: 5px;
 }
+
 @media screen and (max-width : 835px) {
  .team_name {
     font-size: 16px;
   }
 }
+
 @media screen and (max-width : 662px) {
  .team_name {
     font-size: 14px;
   }
 }
+
 @media screen and (max-width : 622px) {
  .team_name {
     font-size: 12px;
   }
 }
-@media screen and (max-width : 662px) {
+
+@media screen and (max-width : 752px) {
  .score {
     font-size: 14px;
     padding: 3px;
   }
 }
+
 .butoane {
   position: absolute;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-auto-flow: column;
   justify-content: space-between;
   background-color: white;
-  width: 40vw;
+  width: 80%;
   bottom: 10px;
-  left: 50%;
-  margin-left: -20vw;
-
+  left: 10%;
+  right: 10%;
 }
+
 .btn {
   font-size: 14px;
   border: 2px solid #c80f2e;
@@ -229,12 +289,33 @@ body, html {
   background-color: white;
   color: #c80f2e;
 }
-@media screen and (max-width : 662px) {
+
+.btn:hover {
+  background-color: #c80f2e;
+  color: white;
+}
+
+@media screen and (max-width : 832px) {
+ .btn {
+    font-size: 13px;
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width : 737px) {
  .btn {
     font-size: 12px;
     padding: 5px;
   }
 }
+
+@media screen and (max-width : 652px) {
+ .btn {
+    font-size: 10px;
+    padding: 3px;
+  }
+}
+
 #footer {
   position: relative;
   grid-column-start: 1;
@@ -245,16 +326,30 @@ body, html {
   height: 300px;
   background-color:  #c80f2e;
 }
+
 #ft-text {
   position: absolute;
-  font-size: 3vw;
+  font-size: 30px;
   color: white;
-  margin-left: 50%;
+  right: 0%;
   bottom: 0px;
 }
+
+@media screen and (max-width : 950px) {
+ #ft-text {
+    font-size: 25px;
+  }
+}
+
 .fa-facebook, .fa-instagram, .fa-tiktok, .fa-twitter {
   margin-top: 30px;
   text-decoration: none;
   color: white;
   font-size: 50px;
+}
+
+@media screen and (max-width : 950px) {
+ .fa-facebook, .fa-instagram, .fa-tiktok, .fa-twitter {
+    font-size: 45px;
+  }
 }

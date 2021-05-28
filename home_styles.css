@@ -1,11 +1,19 @@
 * {
   box-sizing: border-box;
 }
+
 body, html {
   padding: 0;
   margin: 0;
   background-color: rgba(0, 163, 154, 0.3);
 }
+
+@media screen and (max-width : 600px) {
+ body {
+    width: 600px;
+  }
+}
+
 .main-header {
    position: relative;
    background-color: #c80f2e;
@@ -17,37 +25,62 @@ body, html {
   font-size: 1.3em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
+
 .navigation li {
   display: inline;
   padding: 0 5%;
 }
+
 .navigation a {
   display: inline-block;
   padding: 0.5em;
   color: white;
   text-decoration: none;
 }
+
 .navigation a:hover {
    background-color: rgba(255, 255, 255, .9);
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: auto 30%;
   background-color: #c80f2e;
 }
+
 .item1 {
   margin: 0px;
   background-color: #c80f2e;
-  font-size: 5vw;
+  font-size: 50px;
   color: white;
-  padding: 30px;
+  padding-left: 30px;
 }
+
+#social {
+  padding-left: 30px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+@media screen and (max-width : 890px) {
+ .item1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width : 700px) {
+ .item1 {
+    font-size: 30px;
+  }
+}
+
 .item2 {
   background-image: url("Images/nike-liverpool.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
 }
+
 #content {
   display: grid;
   grid-template-columns: 25% 50% 25%;
@@ -55,6 +88,7 @@ body, html {
   justify-content: space-between;
   margin-top: 100px;
 }
+
 #domestic {
   display: grid;
   justify-content: space-evenly;
@@ -63,6 +97,7 @@ body, html {
   height: 700px;
   background-color:  #c80f2e;
 }
+
 .trophy {
   font-size: 15px;
   text-align: center;
@@ -74,18 +109,23 @@ body, html {
   background-position: top;
   transition: background-size 2s;
 }
+
 .trophy:hover {
   background-size: 340px 170px;
 }
+
 #PL {
   background-image: url("Images/PL.png");
 }
+
 #FA {
   background-image: url("Images/FA.png");
 }
+
 #LC {
   background-image: url("Images/League Cup.png");
 }
+
 #CS {
   background-image: url("Images/ComShield.png");
 }
@@ -99,11 +139,13 @@ body, html {
   background-color: white;
   border: 2px solid  #c80f2e;
 }
+
 .slider {
     border: 2px solid red;
     width: 40vw;
     height: 15vw;
 }
+
 #img_1 {
     display: block;
     margin-top: 20px;
@@ -112,6 +154,7 @@ body, html {
     background-size: 40vw 20vw;
     background-position: top;
 }
+
 #img_2 {
   display: none;
   margin-top: 20px;
@@ -120,6 +163,7 @@ body, html {
   background-size: 40vw 20vw;
   background-position: center;
 }
+
 #img_3 {
   display: none;
   margin-top: 20px;
@@ -128,20 +172,24 @@ body, html {
   background-size: 40vw 20vw;
   background-position: center;
 }
+
 .d_text {
   width: 40vw;
   display: none;
 }
+
 @media screen and (max-width : 1536px) {
  .d_text {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width : 856px) {
   .d_text {
     font-size: 16px;
   }
 }
+
 @media screen and (max-width : 618px) {
   .d_text {
     font-size: 14px;
@@ -154,6 +202,7 @@ body, html {
   justify-content: space-between;
   background-color: white;
 }
+
 .arrow {
   border: solid #c80f2e;
   border-width: 0 10px 10px 0;
@@ -161,12 +210,15 @@ body, html {
   background-color: white;
   margin-bottom: 20px;
 }
+
 #left {
   transform: rotate(135deg);
 }
+
 #right {
   transform: rotate(-45deg);
 }
+
 #european {
   display: grid;
   justify-content: space-evenly;
@@ -175,18 +227,23 @@ body, html {
   height: 700px;
   background-color:  #c80f2e;
 }
+
 #UCL {
   background-image: url("Images/UCL.png");
 }
+
 #USC {
   background-image: url("Images/UefaSuperCup.png");
 }
+
 #UC {
   background-image: url("Images/UefaCup.png");
 }
+
 #CWC {
   background-image: url("Images/ClubWC.png");
 }
+
 #footer {
   position: relative;
   grid-column-start: 1;
@@ -197,16 +254,70 @@ body, html {
   height: 300px;
   background-color:  #c80f2e;
 }
+
 #ft-text {
   position: absolute;
-  font-size: 3vw;
+  font-size: 30px;
   color: white;
-  margin-left: 50%;
+  right: 0%;
   bottom: 0px;
 }
+
+#time {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  left: 5%;
+  bottom: 0px;
+}
+
+@media screen and (max-width : 950px) {
+ #ft-text {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width : 950px) {
+ #time {
+    font-size: 25px;
+  }
+}
+
 .fa-facebook, .fa-instagram, .fa-tiktok, .fa-twitter {
   margin-top: 30px;
   text-decoration: none;
   color: white;
   font-size: 50px;
+}
+
+@media screen and (max-width : 950px) {
+ .fa-facebook, .fa-instagram, .fa-tiktok, .fa-twitter {
+    font-size: 45px;
+  }
+}
+
+#official {
+  position: fixed;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  align-items: center;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  border: 2px solid black;
+  background-color: #00a398;
+  color: white;
+}
+
+.torch {
+  text-align: center;
+  background-color: #00a398;
+  color: white;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 60px 30px;
+  background-position: top;
+  background-image: url("Images/torch.png");
 }

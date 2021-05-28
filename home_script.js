@@ -1,3 +1,9 @@
+window.onload = function() {
+  let  x = document.getElementById('time');
+  let d = new Date();
+  x.innerHTML = d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+}
+
 function prev() {
   const text = document.getElementsByClassName('d_text');
   for(let i = 0; i < text.length - 1; i ++) {
@@ -41,3 +47,31 @@ setInterval(function(){
      i++;
 
    }, 8000);
+
+setTimeout(function() {
+  let op = 0.1;
+  let x = document.getElementById('official');
+  let timer = setInterval(function () {
+    if (op >= 1){
+      clearInterval(timer);
+    }
+    x.style.opacity = op;
+    x.style.filter = 'alpha(opacity=' + op * 100 + ")";
+    op += op * 0.1;
+  }, 20)
+}, 1000);
+
+setTimeout(function() {
+       var op = 1;
+       let x = document.getElementById('official');
+       var timer = setInterval(function () {
+           if (op <= 0.1){
+               clearInterval(timer);
+               x.style.display = 'none';
+               x.remove();
+           }
+           x.style.opacity = op;
+           x.style.filter = 'alpha(opacity=' + op * 100 + ")";
+           op -= op * 0.1;
+       }, 20);
+ }, 5000)
