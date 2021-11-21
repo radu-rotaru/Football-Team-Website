@@ -75,7 +75,7 @@ body, html {
 }
 
 .item2 {
-  background-image: url("Images/nike-liverpool.jpg");
+  background-image: url("Images/Logos/nike-liverpool.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
@@ -115,19 +115,19 @@ body, html {
 }
 
 #PL {
-  background-image: url("Images/PL.png");
+  background-image: url("Images/Logos/PL.png");
 }
 
 #FA {
-  background-image: url("Images/FA.png");
+  background-image: url("Images/Logos/FA.png");
 }
 
 #LC {
-  background-image: url("Images/League Cup.png");
+  background-image: url("Images/Logos/League Cup.png");
 }
 
 #CS {
-  background-image: url("Images/ComShield.png");
+  background-image: url("Images/Logos/ComShield.png");
 }
 
 #description {
@@ -149,7 +149,7 @@ body, html {
 #img_1 {
     display: block;
     margin-top: 20px;
-    background-image: url("Images/BusParade.jpg");
+    background-image: url("Images/Team Photos/BusParade.jpg");
     background-repeat: no-repeat;
     background-size: 40vw 20vw;
     background-position: top;
@@ -158,7 +158,7 @@ body, html {
 #img_2 {
   display: none;
   margin-top: 20px;
-  background-image: url("Images/PremierLeague.jpg");
+  background-image: url("Images/Team Photos/PremierLeague.jpg");
   background-repeat: no-repeat;
   background-size: 40vw 20vw;
   background-position: center;
@@ -167,7 +167,7 @@ body, html {
 #img_3 {
   display: none;
   margin-top: 20px;
-  background-image: url("Images/CWC.jpg");
+  background-image: url("Images/Team Photos/CWC.jpg");
   background-repeat: no-repeat;
   background-size: 40vw 20vw;
   background-position: center;
@@ -229,19 +229,19 @@ body, html {
 }
 
 #UCL {
-  background-image: url("Images/UCL.png");
+  background-image: url("Images/Logos/UCL.png");
 }
 
 #USC {
-  background-image: url("Images/UefaSuperCup.png");
+  background-image: url("Images/Logos/UefaSuperCup.png");
 }
 
 #UC {
-  background-image: url("Images/UefaCup.png");
+  background-image: url("Images/Logos/UefaCup.png");
 }
 
 #CWC {
-  background-image: url("Images/ClubWC.png");
+  background-image: url("Images/Logos/ClubWC.png");
 }
 
 #footer {
@@ -319,5 +319,5 @@ body, html {
   background-repeat: no-repeat;
   background-size: 60px 30px;
   background-position: top;
-  background-image: url("Images/torch.png");
+  background-image: url("Images/Logos/torch.png");
 }
